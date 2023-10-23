@@ -1,3 +1,7 @@
+---
+### Fork of [JasonXian/react-chrome-extension-boilerplate](https://github.com/JasonXian/react-chrome-extension-boilerplate)
+---
+
 # React Chrome Extension Boilerplate
 
 Boilerplate for building Chrome Extensions in React and TypeScript using a simple Webpack build process.
