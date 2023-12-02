@@ -5,17 +5,21 @@
   },
   "author": "",
   "devDependencies": {
+    "@types/arrive": "^2.4.4",
     "@types/chrome": "^0.0.181",
+    "@types/jquery": "^3.5.29",
     "@types/react": "^18.0.6",
     "@types/react-dom": "^18.0.2",
     "clean-webpack-plugin": "^3.0.0",
     "copy-webpack-plugin": "^7.0.0",
     "css-loader": "^5.2.4",
+    "css-minimizer-webpack-plugin": "^5.0.1",
+    "html-minimizer-webpack-plugin": "^4.4.0",
     "html-webpack-plugin": "^5.5.3",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "style-loader": "^2.0.0",
-    "terser-webpack-plugin": "^5.1.1",
+    "terser-webpack-plugin": "^5.3.9",
     "ts-loader": "^8.1.0",
     "typescript": "^4.2.4",
     "webpack": "^5.34.0",
@@ -25,6 +29,8 @@
   "dependencies": {
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
-    "@mui/material": "^5.14.14"
+    "@mui/material": "^5.14.14",
+    "arrive": "^2.4.1",
+    "jquery": "^3.7.1"
   }
 }
