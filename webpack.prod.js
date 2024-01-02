@@ -27,4 +27,9 @@ module.exports = merge(common, {
       }),
     ],
   },
+  plugins: [
+    new (require("webpack").DefinePlugin)({
+      "process.env.NODE_ENV": JSON.stringify("production"),
+    }),
+  ],
 });

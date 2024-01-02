@@ -15,17 +15,17 @@ import * as Constants from "../lib/constants";
   const manifest = runtimeApi.getManifest();
 
   $(() => {
-    // Todo: Init when document is ready
+    // TODO: Init when document is ready
 
     Storage.get(["key", "some-key"]).then(({ key, "some-key": someKey }) => {
       console.log("key", key);
       console.log("someKey", someKey);
-      // Todo
+      // TODO
     });
   });
 
   storageApi.onChanged.addListener((changes, namespace) => {
-    // Todo: Handle storage changes if required
+    // TODO: Handle storage changes if required
   });
 
   runtimeApi.onMessage.addListener((message, sender, sendResponse) => {
@@ -33,7 +33,7 @@ import * as Constants from "../lib/constants";
       sendResponse({ m: Constants.RESPONSE_PONG });
     }
 
-    // Todo: Handle other messages if required
+    // TODO: Handle other messages if required
   });
 
   document.arrive(
@@ -44,11 +44,11 @@ import * as Constants from "../lib/constants";
       // fireOnAttributesModification: false,
     },
     (element) => {
-      // Todo: Element was removed
+      // TODO: Element was removed
     }
   );
 
   document.leave("<css-selector>", (element) => {
-    // Todo: Element was removed
+    // TODO: Element was removed
   });
 })(window);

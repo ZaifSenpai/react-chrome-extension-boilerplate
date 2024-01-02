@@ -1,10 +1,13 @@
 {
   "compilerOptions": {
     "jsx": "react",
-    "module": "es2022",
-    "target": "es2022",
+    "module": "esnext",
+    "target": "es2017",
     "moduleResolution": "node",
     "esModuleInterop": true,
-    "strict": true
-  }
+    "strict": true,
+    "types": ["chrome", "react", "react-dom"]
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx"],
+  "exclude": ["node_modules"]
 }

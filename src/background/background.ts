@@ -9,14 +9,14 @@ import * as Constants from "../lib/constants";
 
   chrome.runtime.onInstalled.addListener((details) => {
     if (details.reason === runtimeApi.OnInstalledReason.INSTALL) {
-      // Todo: on First install
+      // TODO: on First install
     } else if (details.reason === runtimeApi.OnInstalledReason.UPDATE) {
-      // Todo: on Update
+      // TODO: on Update
     }
   });
 
   storageApi.onChanged.addListener((changes, namespace) => {
-    // Todo: Handle storage changes if required
+    // TODO: Handle storage changes if required
   });
 
   runtimeApi.onMessage.addListener((message, sender, sendResponse) => {
@@ -24,6 +24,6 @@ import * as Constants from "../lib/constants";
       sendResponse({ m: Constants.RESPONSE_PONG });
     }
 
-    // Todo: Handle other messages if required
+    // TODO: Handle other messages if required
   });
 })(chrome);
