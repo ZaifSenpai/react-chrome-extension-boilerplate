@@ -37,18 +37,18 @@ import * as Constants from "../lib/constants";
   });
 
   document.arrive(
-    "<css-selector>",
+    ".css-selector",
     {
       // onceOnly: false,
       // existing: true,
       // fireOnAttributesModification: false,
     },
     (element) => {
-      // TODO: Element was removed
+      // TODO: Element was added
     }
   );
 
-  document.leave("<css-selector>", (element) => {
+  document.leave(".css-selector", (element) => {
     // TODO: Element was removed
   });
 })(window);
