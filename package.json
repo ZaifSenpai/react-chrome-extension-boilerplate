@@ -1,4 +1,6 @@
 {
+  "name": "chrome-ext-react",
+  "version": "1.0.1",
   "bin": {
     "chrome-ext-react": "bin/install.mjs"
   },

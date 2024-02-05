@@ -8,9 +8,11 @@ Boilerplate for building Chrome Extensions in React and TypeScript using a simpl
 
 ## Getting Started
 
-1. `npm i` to install dependancies
-2. `npm start` to start running the fast development mode Webpack build process that bundle files into the `dist` folder
-3. `npm i --save-dev <package_name>` to install new packages
+1. `npx chrome-ext-react my-ext`
+2. `cd my-ext`
+3. Edit name and description in `package.json` and `manifest.json`
+4. `npm i` to install dependancies
+5. `npm start` to build in watch mode
 
 ## Loading The Chrome Extension
 
