@@ -1,6 +1,7 @@
 {
   "name": "chrome-ext-react",
-  "version": "1.0.2",
+  "version": "1.0.3",
+  "description": "Chrome Extension Boilerplate with React and TypeScript",
   "bin": {
     "chrome-ext-react": "bin/install.mjs"
   },
@@ -9,7 +10,7 @@
     "dev": "webpack --progress --config webpack.dev.js",
     "build": "webpack --progress --config webpack.prod.js"
   },
-  "author": "",
+  "author": "ZaifSenpai",
   "devDependencies": {
     "@types/arrive": "^2.4.4",
     "@types/chrome": "^0.0.181",
