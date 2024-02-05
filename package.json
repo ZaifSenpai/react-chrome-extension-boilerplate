@@ -1,4 +1,7 @@
 {
+  "bin": {
+    "chrome-ext-react": "bin/install.mjs"
+  },
   "scripts": {
     "start": "webpack --watch --progress --config webpack.dev.js",
     "dev": "webpack --progress --config webpack.dev.js",
@@ -12,11 +15,13 @@
     "@types/react": "^18.0.6",
     "@types/react-dom": "^18.0.2",
     "clean-webpack-plugin": "^3.0.0",
+    "cli-spinners": "^2.9.2",
     "copy-webpack-plugin": "^7.0.0",
     "css-loader": "^5.2.4",
     "css-minimizer-webpack-plugin": "^5.0.1",
     "html-minimizer-webpack-plugin": "^4.4.0",
     "html-webpack-plugin": "^5.5.3",
+    "ora": "^8.0.1",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "style-loader": "^2.0.0",
