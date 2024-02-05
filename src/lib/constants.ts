@@ -5,5 +5,5 @@
 export const REQUEST_PING = "ping";
 export const RESPONSE_PONG = "pong";
 
-// @ts-expect-error: process is not defined. `process.env.NODE_ENV` is replace by webpack at build time
+// @ts-ignore: process is not defined. `process.env.NODE_ENV` is replaced by webpack at build time
 export const DEBUG_MODE = process.env.NODE_ENV === "development";
