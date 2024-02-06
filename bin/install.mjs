@@ -58,7 +58,7 @@ try {
 
   // Remove useless keys from package.json
   const packageJsonPath = path.join(projectPath, "package.json");
-  const packageJson = require(packageJsonPath);
+  const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, "utf8"));
   delete packageJson.bin;
   delete packageJson.keywords;
   delete packageJson.repository;
@@ -66,6 +66,8 @@ try {
   delete packageJson.homepage;
   delete packageJson.keywords;
   packageJson.author = "";
+  packageJson.name = projectName.toLowerCase().replace(/ /g, "-");
+  packageJson.version = "1.0.0";
 
   fs.writeFileSync(packageJsonPath, JSON.stringify(packageJson, null, 2));
 
