@@ -1,6 +1,6 @@
 {
   "name": "chrome-ext-react",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Chrome Extension Boilerplate with React and TypeScript",
   "bin": {
     "chrome-ext-react": "bin/install.mjs"
@@ -10,7 +10,41 @@
     "dev": "webpack --progress --config webpack.dev.js",
     "build": "webpack --progress --config webpack.prod.js"
   },
-  "author": "ZaifSenpai",
+  "author": "ZaifSenpai <zaifsenpai@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ZaifSenpai/react-chrome-extension-boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ZaifSenpai/react-chrome-extension-boilerplate/issues"
+  },
+  "homepage": "https://github.com/ZaifSenpai/react-chrome-extension-boilerplate",
+  "keywords": [
+    "chrome",
+    "chromium",
+    "brave",
+    "edge",
+    "firefox",
+    "opera",
+    "extension",
+    "react",
+    "typescript",
+    "webpack",
+    "boilerplate",
+    "starter",
+    "template",
+    "bundler",
+    "starter-kit",
+    "starter-template",
+    "starter-project",
+    "starter-boilerplate",
+    "starter-webpack",
+    "starter-react",
+    "starter-typescript",
+    "starter-chrome",
+    "starter-extension",
+    "starter-chrome-extension"
+  ],
   "devDependencies": {
     "@types/arrive": "^2.4.4",
     "@types/chrome": "^0.0.260",

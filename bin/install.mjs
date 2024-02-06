@@ -56,6 +56,19 @@ try {
   });
   await Promise.all([rmGit, rmBin]);
 
+  // Remove useless keys from package.json
+  const packageJsonPath = path.join(projectPath, "package.json");
+  const packageJson = require(packageJsonPath);
+  delete packageJson.bin;
+  delete packageJson.keywords;
+  delete packageJson.repository;
+  delete packageJson.bugs;
+  delete packageJson.homepage;
+  delete packageJson.keywords;
+  packageJson.author = "";
+
+  fs.writeFileSync(packageJsonPath, JSON.stringify(packageJson, null, 2));
+
   process.chdir(projectPath);
   // remove the packages needed for cli
   await exec("npm uninstall ora cli-spinners");
