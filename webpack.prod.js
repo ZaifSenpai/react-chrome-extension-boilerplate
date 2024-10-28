@@ -17,6 +17,9 @@ module.exports = merge(common, {
             drop_console: true, // Remove 'console.*' calls
             drop_debugger: true, // Remove 'debugger' statements
           },
+          format: {
+            comments: false, // Remove comments
+          },
         },
       }),
       // Use CssMinimizerPlugin for CSS minification

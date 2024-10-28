@@ -13,10 +13,12 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Use Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node }}
 
       - name: Install dependencies
         run: npm ci
@@ -32,11 +34,8 @@ jobs:
           mv dist $NEW_NAME
           echo "NEW_NAME=$NEW_NAME" >> $GITHUB_ENV
 
-      - name: Zip build directory
-        run: zip -r ${{ env.NEW_NAME }}.zip ${{ env.NEW_NAME }}
-
-      - name: Upload build.zip as artifact
-        uses: actions/upload-artifact@v2
+      - name: Upload build as artifact
+        uses: actions/upload-artifact@v4
         with:
-          name: ${{ env.NEW_NAME }}.zip
-          path: ${{ env.NEW_NAME }}.zip
+          name: ${{ env.NEW_NAME }}
+          path: ${{ env.NEW_NAME }}/*
