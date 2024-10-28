@@ -2,7 +2,7 @@
 import { promisify } from "util";
 import cp from "child_process";
 import path from "path";
-import fs, { existsSync, mkdirSync } from "fs";
+import fs from "fs";
 
 // cli spinners
 import ora from "ora";
@@ -64,7 +64,7 @@ try {
   delete packageJson.repository;
   delete packageJson.bugs;
   delete packageJson.homepage;
-  delete packageJson.keywords;
+  delete packageJson.scripts["deploy"];
   packageJson.author = "";
   packageJson.name = projectName.toLowerCase().replace(/ /g, "-");
   packageJson.version = "1.0.0";

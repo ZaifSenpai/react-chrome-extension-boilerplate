@@ -1,6 +1,6 @@
 {
   "name": "chrome-ext-react",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Chrome Extension Boilerplate with React and TypeScript",
   "bin": {
     "chrome-ext-react": "bin/install.mjs"
@@ -8,7 +8,8 @@
   "scripts": {
     "start": "webpack --watch --progress --config webpack.dev.js",
     "dev": "webpack --progress --config webpack.dev.js",
-    "build": "webpack --progress --config webpack.prod.js"
+    "build": "webpack --progress --config webpack.prod.js",
+    "deploy": "npm publish"
   },
   "author": "ZaifSenpai <zaifsenpai@gmail.com>",
   "repository": {
