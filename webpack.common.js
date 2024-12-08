@@ -19,11 +19,18 @@ module.exports = {
       },
       {
         test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
+        use: ["style-loader", "css-loader", "postcss-loader"],
       },
       {
-        test: /\.(jpg|jpeg|png|woff|woff2|eot|ttf|svg)$/,
+        test: /\.(jpg|jpeg|png|svg)$/,
         type: "asset/resource",
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf)$/,
+        type: "asset/resource",
+        generator: {
+          filename: "assets/fonts/[name][ext][query]",
+        },
       },
     ],
   },

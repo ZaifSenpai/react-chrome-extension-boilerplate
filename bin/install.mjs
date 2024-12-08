@@ -64,7 +64,7 @@ try {
   delete packageJson.repository;
   delete packageJson.bugs;
   delete packageJson.homepage;
-  delete packageJson.scripts["deploy"];
+  delete packageJson.scripts.deploy;
   packageJson.author = "";
   packageJson.name = projectName.toLowerCase().replace(/ /g, "-");
   packageJson.version = "1.0.0";
