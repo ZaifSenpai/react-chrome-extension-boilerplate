@@ -2,6 +2,7 @@ const path = require("path");
 const CopyPlugin = require("copy-webpack-plugin");
 const HtmlPlugin = require("html-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const NodePolyfillPlugin = require("node-polyfill-webpack-plugin");
 
 module.exports = {
   entry: {
@@ -53,6 +54,7 @@ module.exports = {
         },
       ],
     }),
+    new NodePolyfillPlugin(),
     ...getHtmlPlugins(["popup", "options"]),
   ],
   output: {
