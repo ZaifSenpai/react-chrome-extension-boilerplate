@@ -1,5 +1,9 @@
 # Changelog
 
+### 2.1.0 (2025-07-12)
+
+#### Fix postcss configuration for Tailwind CSS v4
+
 ### 2.0.0 (2025-07-12)
 
 #### Update dependencies and version to 1.3.0

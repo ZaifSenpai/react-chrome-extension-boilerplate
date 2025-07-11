@@ -1,6 +1,6 @@
 {
   "name": "chrome-ext-react",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "Chrome Extension Boilerplate with React and TypeScript",
   "engines": {
     "node": ">=18.12.0"
@@ -51,6 +51,7 @@
   ],
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.10",
+    "@tailwindcss/postcss": "^4.1.11",
     "@types/arrive": "^2.4.4",
     "@types/chrome": "^0.1.0",
     "@types/jquery": "^3.5.32",
