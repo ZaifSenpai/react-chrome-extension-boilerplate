@@ -1,7 +1,10 @@
 {
   "name": "chrome-ext-react",
-  "version": "1.2.1",
+  "version": "2.0.0",
   "description": "Chrome Extension Boilerplate with React and TypeScript",
+  "engines": {
+    "node": ">=18.12.0"
+  },
   "bin": {
     "chrome-ext-react": "bin/install.mjs"
   },
@@ -47,40 +50,38 @@
     "starter-chrome-extension"
   ],
   "devDependencies": {
-    "@tailwindcss/forms": "^0.5.9",
+    "@tailwindcss/forms": "^0.5.10",
     "@types/arrive": "^2.4.4",
-    "@types/chrome": "^0.0.287",
+    "@types/chrome": "^0.1.0",
     "@types/jquery": "^3.5.32",
-    "@types/react": "^19.0.1",
-    "@types/react-dom": "^19.0.1",
+    "@types/react": "^19.1.8",
+    "@types/react-dom": "^19.1.6",
     "clean-webpack-plugin": "^4.0.0",
-    "copy-webpack-plugin": "^12.0.2",
-    "css-loader": "^6.10.0",
-    "css-minimizer-webpack-plugin": "^6.0.0",
-    "html-minimizer-webpack-plugin": "^5.0.0",
-    "html-webpack-plugin": "^5.6.0",
+    "copy-webpack-plugin": "^13.0.0",
+    "css-loader": "^7.1.2",
+    "css-minimizer-webpack-plugin": "^7.0.2",
+    "html-minimizer-webpack-plugin": "^5.0.2",
+    "html-webpack-plugin": "^5.6.3",
     "node-polyfill-webpack-plugin": "^4.1.0",
-    "postcss": "^8.4.49",
+    "postcss": "^8.5.6",
     "postcss-loader": "^8.1.1",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "style-loader": "^3.3.4",
-    "tailwindcss": "^3.4.16",
-    "terser-webpack-plugin": "^5.3.10",
-    "ts-loader": "^9.5.1",
-    "typescript": "^5.7.2",
-    "webpack": "^5.97.1",
-    "webpack-cli": "^5.1.4",
-    "webpack-merge": "^5.10.0"
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "style-loader": "^4.0.0",
+    "tailwindcss": "^4.1.11",
+    "terser-webpack-plugin": "^5.3.14",
+    "ts-loader": "^9.5.2",
+    "typescript": "^5.8.3",
+    "webpack": "^5.100.1",
+    "webpack-cli": "^6.0.1",
+    "webpack-merge": "^6.0.1"
   },
   "dependencies": {
-    "@emotion/react": "^11.13.5",
-    "@emotion/styled": "^11.13.5",
-    "@fontsource/sora": "^5.1.0",
-    "arrive": "^2.5.1",
-    "autoprefixer": "^10.4.20",
-    "cli-spinners": "^2.9.2",
-    "jquery": "^3.7.1",
-    "ora": "^8.1.1"
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@fontsource/sora": "^5.2.6",
+    "arrive": "^2.5.2",
+    "autoprefixer": "^10.4.21",
+    "jquery": "^3.7.1"
   }
 }

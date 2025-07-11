@@ -67,6 +67,7 @@ try {
   delete packageJson.scripts.deploy;
   packageJson.author = "";
   packageJson.name = projectName.toLowerCase().replace(/ /g, "-");
+  packageJson.description = "...";
   packageJson.version = "1.0.0";
 
   fs.writeFileSync(packageJsonPath, JSON.stringify(packageJson, null, 2));
